@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // Calculation
+
+        let op = prompt("a. addition \n b. subtraction \n c. multiplication \n d. divison \n e.modulo");
+
+        switch (op) {
+            case "a":
+                let num1 = Number(prompt("enter first num"))
+                let num2 = Number(prompt("enter second num"))
+                let add_ans = num1 + num2;
+                alert("addition answer = " + add_ans)
+
+                break;
+            case "b":
+                let num3 = Number(prompt("enter first num"))
+                let num4 = Number(prompt("enter second num"))
+                let sub_ans = num3 - num4;
+                alert("substraction answer = " + sub_ans)
+                break;
+            case "c":
+                let num5 = Number(prompt("enter first num"))
+                let num6 = Number(prompt("enter second number"))
+                let mul_ans = num5 * num6;
+                alert("multiplication answer = " + mul_ans)
+                break;
+            case "d":
+                let num7 = Number(prompt("enter first num"))
+                let num8 = Number(prompt("enter second number"))
+                let div_ans = num7 / num8;
+                alert("division answer = " + div_ans)
+                break;
+            case "e":
+                let num9 = Number(prompt("enter first num"))
+                let num10 = Number(prompt("enter second number"))
+                let modu_ans = num9 % num10;
+                alert("Modulo answer = " + modu_ans)
+                break;
+
+            default:
+                alert("invalid options")
+                break;
+
+        }
+
+
+        //   Formula
+
+        let answer = prompt("1. (a*2)(b*2) \n 2.Area of Semicircle \n 3.Area of Circle \n 4. (x+y)*2")
+
+        switch (answer) {
+            case "1":
+                let a = 8;
+                let b = 3;
+                let c = (a + b) * (a - b);
+                console.log("a*2+b*2 is " + c);
+                break;
+            case "2":
+                let pi = 3.14;
+                let r = 3;
+                let semicircle_area = 1 / 2 * pi * r * r;
+                console.log("Area of Semicircle is " + semicircle_area);
+                break;
+
+            case "3":
+                let A = 3.14;
+                let R = 2;
+                let circle_area = A * R * R;
+                console.log("Area Of Circle is " + circle_area);
+                break;
+            case "4":
+                let x = 5;
+                let y = 3;
+                let z = x * x + y * y + 2 * x * y;
+                console.log("(x+y)*2 is " + z)
+                break;
+
+
+        }
+    </script>
+</body>
+
+</html>
